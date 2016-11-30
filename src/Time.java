@@ -2,7 +2,7 @@
  * Created by Chris on 11/8/16.
  * Time class has hour, minute, and isPM
  */
-public class Time {
+public class Time implements Cloneable, Comparable<Time> {
     private int hour;
     private int minute;
     private boolean isPM;
@@ -128,5 +128,28 @@ public class Time {
         String hourStr = String.format("%02d", hour);
         String minuteStr = String.format("%02d", minute);
         return hourStr + ":" + minuteStr + " " + timeOfDay;
+    }
+
+    @Override
+    protected Time clone() {
+        try {
+            return (Time) super.clone();
+        } catch (CloneNotSupportedException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public int compareTo(Time o) {
+        if (isPM() == o.isPM()) {
+            if (hour != o.hour)
+                return hour % 12 - o.hour % 12;
+            else
+                return minute - o.minute;
+        } else if (isPM() && !o.isPM())
+            return 1;
+        else if (!isPM() && o.isPM())
+            return -1;
+        else return 0;
     }
 }
