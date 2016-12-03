@@ -11,7 +11,11 @@ import org.junit.runners.Suite;
         TimeInstructorTest.class,
         TimeTest.class,
         WeekdayInstructorTest.class,
-        WeekdayTest.class
+        WeekdayTest.class,
+        CourseCreditComparator.class,
+        CourseNameComparator.class,
+        CourseTimeComparator.class,
+        ScheduleTest.class
 })
 public class HW6TestSuite {
 }
