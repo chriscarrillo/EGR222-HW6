@@ -14,7 +14,7 @@ public class ScheduleTest {
     public void addTest() {
         Time t1 = new Time(1, 0, true);
         Set<Weekday> d1 = EnumSet.of(Weekday.WEDNESDAY);
-        Course c1 = new Course("CHID 217", 1, d1, t1, 30);
+        Course c1 = new Course("MAT 245", 1, d1, t1, 30);
         Schedule sa = new Schedule();
         sa.add(c1);
         Collection<Course> allC = sa.getAllCourses();

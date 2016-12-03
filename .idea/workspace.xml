@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b30da63-9628-488a-ac79-4cce7e03c913" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CourseCreditComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CourseNameComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CourseTimeComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Schedule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ScheduleConflictException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ScheduleIO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ScheduleTableModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SchedulerGui.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SchedulerInputPane.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SchedulerMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/CourseCreditComparatorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/CourseNameComparatorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/CourseTimeComparatorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/ScheduleConflictExceptionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tst/ScheduleTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courses.txt" afterPath="$PROJECT_DIR$/courses.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tst/ScheduleTest.java" afterPath="$PROJECT_DIR$/tst/ScheduleTest.java" />
     </list>
     <ignored path="HW6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +28,8 @@
       <file leaf-file-name="ScheduleTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tst/ScheduleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+            <state relative-caret-position="137">
+              <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -756,7 +741,7 @@
       <workItem from="1480570561195" duration="109000" />
       <workItem from="1480571223091" duration="1101000" />
       <workItem from="1480580373937" duration="93000" />
-      <workItem from="1480636744430" duration="7091000" />
+      <workItem from="1480636744430" duration="7232000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit for HW6">
       <created>1478833163723</created>
@@ -779,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480490374377</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HW6 Part 2">
+      <created>1480723173047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1480723173047</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -815,11 +807,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56994000" />
+    <option name="totallyTimeSpent" value="57135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="801" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -831,12 +823,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.352459" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.352459" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16458334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16458334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -870,7 +862,8 @@
     <MESSAGE value="Initial commit for HW6" />
     <MESSAGE value="HW6 Push for Weekday Enum" />
     <MESSAGE value="HW6 Part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW6 Part 1" />
+    <MESSAGE value="HW6 Part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW6 Part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1305,8 +1298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tst/ScheduleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        <state relative-caret-position="137">
+          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
