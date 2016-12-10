@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8b30da63-9628-488a-ac79-4cce7e03c913" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mySchedule.txt" afterPath="$PROJECT_DIR$/mySchedule.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Course.java" afterPath="$PROJECT_DIR$/src/Course.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Schedule.java" afterPath="$PROJECT_DIR$/src/Schedule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tst/ScheduleTest.java" afterPath="$PROJECT_DIR$/tst/ScheduleTest.java" />
     </list>
     <ignored path="HW6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,41 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SchedulerMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SchedulerMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SchedulerMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courses.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courses.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mySchedule.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mySchedule.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SchedulerGui.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SchedulerGui.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -78,6 +50,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>toEnumSet</find>
+      <find>clone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,7 +70,6 @@
         <option value="$PROJECT_DIR$/src/Weekday.java" />
         <option value="$PROJECT_DIR$/src/Time.java" />
         <option value="$PROJECT_DIR$/tst/CourseInstructorTest.java" />
-        <option value="$PROJECT_DIR$/src/Course.java" />
         <option value="$PROJECT_DIR$/tst/CourseTest.java" />
         <option value="$PROJECT_DIR$/src/CourseNameComparator.java" />
         <option value="$PROJECT_DIR$/src/CourseCreditComparator.java" />
@@ -107,12 +79,14 @@
         <option value="$PROJECT_DIR$/tst/CourseNameComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/CourseTimeComparator.java" />
         <option value="$PROJECT_DIR$/tst/CourseTimeComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/Schedule.java" />
-        <option value="$PROJECT_DIR$/tst/ScheduleTest.java" />
         <option value="$PROJECT_DIR$/tst/HW6TestSuite.java" />
         <option value="$PROJECT_DIR$/courses.txt" />
         <option value="$PROJECT_DIR$/mySchedule.txt" />
         <option value="$PROJECT_DIR$/src/SchedulerGui.java" />
+        <option value="$PROJECT_DIR$/tst/ScheduleTest.java" />
+        <option value="$PROJECT_DIR$/src/Schedule.java" />
+        <option value="$PROJECT_DIR$/src/Course.java" />
+        <option value="$PROJECT_DIR$/tst/ScheduleInstructorTest.java" />
       </list>
     </option>
   </component>
@@ -143,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -188,6 +161,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,94 +170,100 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Application.SchedulerMain">
-    <configuration default="false" name="HW6TestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ScheduleInstructorTest">
+    <configuration default="false" name="ScheduleTest.getCourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="HW6" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HW6TestSuite" />
+      <option name="MAIN_CLASS_NAME" value="ScheduleTest" />
+      <option name="METHOD_NAME" value="getCourseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScheduleTest.removeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScheduleTest" />
+      <option name="METHOD_NAME" value="removeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScheduleTest.totalCreditsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScheduleTest" />
+      <option name="METHOD_NAME" value="totalCreditsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScheduleTest.cloneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScheduleTest" />
+      <option name="METHOD_NAME" value="cloneTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScheduleInstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="HW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScheduleInstructorTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CourseCreditComparatorTest.compareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="HW6" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CourseCreditComparatorTest" />
-      <option name="METHOD_NAME" value="compareTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="SchedulerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="SchedulerMain" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="HW6" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="CourseNameComparatorTest.compareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="HW6" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CourseNameComparatorTest" />
-      <option name="METHOD_NAME" value="compareTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CourseTimeComparatorTest.compareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="HW6" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CourseTimeComparatorTest" />
-      <option name="METHOD_NAME" value="compareTest" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -678,19 +658,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.HW6TestSuite" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CourseCreditComparatorTest.compareTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SchedulerMain" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CourseNameComparatorTest.compareTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CourseTimeComparatorTest.compareTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ScheduleTest.getCourseTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ScheduleTest.removeTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ScheduleTest.totalCreditsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ScheduleTest.cloneTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ScheduleInstructorTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SchedulerMain" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CourseTimeComparatorTest.compareTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CourseNameComparatorTest.compareTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CourseCreditComparatorTest.compareTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HW6TestSuite" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ScheduleInstructorTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ScheduleTest.cloneTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ScheduleTest.totalCreditsTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ScheduleTest.removeTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ScheduleTest.getCourseTest" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -751,7 +731,8 @@
       <workItem from="1480570561195" duration="109000" />
       <workItem from="1480571223091" duration="1101000" />
       <workItem from="1480580373937" duration="93000" />
-      <workItem from="1480636744430" duration="8226000" />
+      <workItem from="1480636744430" duration="8234000" />
+      <workItem from="1481316206394" duration="3638000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit for HW6">
       <created>1478833163723</created>
@@ -802,46 +783,53 @@
       <option name="project" value="LOCAL" />
       <updated>1480726040033</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="HW6 Part 2">
+      <created>1480726200291</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1480726200291</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CourseCreditComparatorTest_compareTest - 2016.12.02 at 16h 03m 28s.xml">
-      <configuration name="CourseCreditComparatorTest.compareTest" configurationId="JUnit" />
+    <history-entry file="ScheduleInstructorTest - 2016.12.09 at 16h 34m 28s.xml">
+      <configuration name="ScheduleInstructorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseCreditComparatorTest_compareTest - 2016.12.02 at 16h 08m 39s.xml">
-      <configuration name="CourseCreditComparatorTest.compareTest" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_addTestNegative - 2016.12.09 at 16h 00m 55s.xml">
+      <configuration name="ScheduleTest.addTestNegative" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseNameComparatorTest_compareTest - 2016.12.02 at 16h 08m 53s.xml">
-      <configuration name="CourseNameComparatorTest.compareTest" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_cloneTest - 2016.12.09 at 16h 23m 11s.xml">
+      <configuration name="ScheduleTest.cloneTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourseTimeComparatorTest_compareTest - 2016.12.02 at 16h 09m 04s.xml">
-      <configuration name="CourseTimeComparatorTest.compareTest" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_cloneTest - 2016.12.09 at 16h 25m 08s.xml">
+      <configuration name="ScheduleTest.cloneTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HW6TestSuite - 2016.12.02 at 16h 03m 00s.xml">
-      <configuration name="HW6TestSuite" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_constructorTest - 2016.12.09 at 15h 58m 15s.xml">
+      <configuration name="ScheduleTest.constructorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HW6TestSuite - 2016.12.02 at 16h 03m 42s.xml">
-      <configuration name="HW6TestSuite" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_getCourseTest - 2016.12.09 at 16h 06m 19s.xml">
+      <configuration name="ScheduleTest.getCourseTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HW6TestSuite - 2016.12.02 at 16h 08m 23s.xml">
-      <configuration name="HW6TestSuite" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_getCourseTest - 2016.12.09 at 16h 09m 41s.xml">
+      <configuration name="ScheduleTest.getCourseTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScheduleTest - 2016.12.02 at 16h 02m 06s.xml">
-      <configuration name="ScheduleTest" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_getCourseTest - 2016.12.09 at 16h 10m 32s.xml">
+      <configuration name="ScheduleTest.getCourseTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScheduleTest_addTest - 2016.12.02 at 15h 58m 08s.xml">
-      <configuration name="ScheduleTest.addTest" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_removeTest - 2016.12.09 at 16h 13m 13s.xml">
+      <configuration name="ScheduleTest.removeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScheduleTest_addTest - 2016.12.02 at 15h 59m 08s.xml">
-      <configuration name="ScheduleTest.addTest" configurationId="JUnit" />
+    <history-entry file="ScheduleTest_totalCreditsTest - 2016.12.09 at 16h 14m 14s.xml">
+      <configuration name="ScheduleTest.totalCreditsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58129000" />
+    <option name="totallyTimeSpent" value="61775000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="801" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="801" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -898,7 +886,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -907,24 +895,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Weekday.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Time.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1114,16 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tst/CourseInstructorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tst/CourseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1154,16 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="322" column="0" lean-forward="false" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1241,28 +1190,6 @@
         <state relative-caret-position="270">
           <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Schedule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1782#1783#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tst/ScheduleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1304,18 +1231,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SchedulerMain.java">
+    <entry file="file://$PROJECT_DIR$/src/SchedulerGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courses.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="15">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1323,15 +1242,79 @@
     <entry file="file://$PROJECT_DIR$/mySchedule.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SchedulerGui.java">
+    <entry file="file://$PROJECT_DIR$/courses.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/CourseInstructorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-400">
+          <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="58" lean-forward="false" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/ScheduleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tst/ScheduleInstructorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SchedulerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>

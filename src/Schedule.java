@@ -3,6 +3,7 @@ import java.util.*;
 
 /**
  * Created by Chris on 11/30/16.
+ * The Schedule class contains methods required to create a schedule
  */
 public class Schedule implements Cloneable {
     private List<Course> schedule;
@@ -13,6 +14,7 @@ public class Schedule implements Cloneable {
         this.totalCredits = 0;
     }
 
+    // The add method adds the given course to the schedule
     public void add(Course c) {
         for (Course c1 : this.schedule) {
             if (c1.conflictsWith(c)) {
@@ -23,17 +25,18 @@ public class Schedule implements Cloneable {
         this.totalCredits += c.getCredits();
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
+    // The clone method clones the schedule when called
+    public Schedule clone() {
         try {
-            Schedule s = (Schedule) super.clone();
-            s.schedule = new ArrayList<Course>(schedule);
-            return s;
+            Schedule sCopy = (Schedule) super.clone();
+            sCopy.schedule = new ArrayList<>(schedule);
+            return sCopy;
         } catch(CloneNotSupportedException e) {
             return null;
         }
     }
 
+    // The getCourse method returns the Course given the day and time
     public Course getCourse(Weekday day, Time time) {
         for (Course c : this.schedule) {
             if (c.contains(day, time)) {
@@ -43,6 +46,7 @@ public class Schedule implements Cloneable {
         return null;
     }
 
+    // The remove method removes the course with the given information
     public void remove(Weekday day, Time time) {
         for (int i = 0; i < this.schedule.size(); i++) {
             Course c = this.schedule.get(i);
@@ -63,10 +67,12 @@ public class Schedule implements Cloneable {
         p.close();
     }
 
+    // returns all of the courses in the schedule
     public List<Course> getAllCourses() {
         return schedule;
     }
 
+    // returns the total amount of credits in the schedule
     public int totalCredits() {
         return this.totalCredits;
     }

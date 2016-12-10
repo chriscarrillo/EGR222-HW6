@@ -21,6 +21,8 @@ public class Course {
         this.startTime = t.clone();
     }
 
+    // returns true if the course given conflicts with the course that called it
+    // returns false if otherwise
     public boolean conflictsWith(Course c) {
         for (Weekday d : c.days) {
             if (days.contains(d)) {
@@ -32,6 +34,7 @@ public class Course {
         return false;
     }
 
+    // returns true if the course contains the given parameters
     public boolean contains(Weekday d, Time t) {
         if (days.contains(d)) {
             if (getStartTime().equals(t))
@@ -68,22 +71,27 @@ public class Course {
         return result;
     }
 
+    // returns the course name
     public String getName() {
         return name;
     }
 
+    // returns the total amount of credits the course has
     public int getCredits() {
         return credits;
     }
 
+    // returns the duration of the course
     public int getDuration() {
         return duration;
     }
 
+    // returns the start time of the course
     public Time getStartTime() {
         return startTime.clone();
     }
 
+    // returns the end time of the course
     public Time getEndTime() {
         Time end = getStartTime().clone();
         end.shift(getDuration());
